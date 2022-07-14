@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Page</title>
+  <link rel="shortcut icon" href="images/logo1.png" style="width:80% height=50px;">
+  <link rel="shortcut icon" href="logo.jpg" style="width:200%">
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Dosis:wght@300&family=Play&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+
+</head>
+<style>
+  #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #18ffff; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+</style>
+  
+<!--NAVIGATION SECTION-->
+<body class="bg-gray-900">
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img src="images/logo1.png" alt="logo" class="w-12 h-12 rounded rounded-full xs:w-6  ">  
+        <!-- <span class="ml-3 text-xl text-[#18ffff] xs:text-base font-mono font-bold">Portfolio</span> -->
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap xs:text-sm xs:spaxe-x-7 text-base justify-center space-x-9 ">
+        <a href="#home" class=" hover:transition ease-in-out delay-150 mr-5 hover:text-white font-mono font-medium text-sm text-[#18ffff] hover:border-b-2 border-[#18ffff] mx-2 ">HOME</a>
+        <a href="#about-me" class=" transition ease-in-out delay-150 mr-5 hover:text-white font-mono font-medium text-sm text-[#18ffff] hover:border-b-2 border-[#18ffff] mx-2">ABOUT</a>
+        <a href="#projects" class="transition ease-in-out delay-150 mr-5 hover:text-white font-mono font-medium text-sm text-[#18ffff] hover:border-b-2 border-[#18ffff] mx-3">PROJECTS</a>
+        <a href="#contact-me" class="transition ease-in-out delay-150 mr-5 hover:text-white font-mono font-medium text-sm text-[#18ffff] hover:border-b-2 border-[#18ffff] mx-3">CONTACT</a>
+      </nav>
+      
+    </div>
+    
+  
+    
+  </header>
+  
+  <!--NAVIGATION SECTION ENDS-->
+  
+      
+               
+                 
+    
+
+  <!--BANNER-->
+   <section id="home" class="text-gray-600 body-font bg-[url(images/bg1.jpg)] bg-cover bg-opacity-50   ">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+         <!--<img class="object-cover object-center rounded rounded-full w-[50%] lg:w-85 mx-12 xs:w-50  " alt="hero" src="img3.png">-->  
+        
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 lg:flex flex-col  md:items-start md:text-left items-center justify-center">
+        <h1 class="title-font sm:text-4xl text-4xl mb-4 font-medium font-mono text-white">Hi! I Am <span
+            class="text-[#18ffff]">Zaufishan Khan</span>
+          <br class="hidden lg:inline-block "><span id="typed" class="text-white font-thin text-3xl"></span>
+        </h1>
+        <p class="mb-8 leading-relaxed text-gray-200 ">Passionate about building innovative and attractive-looking
+          websites. </p>
+        <div class="flex justify-center">
+          <a href="Zaufishan_khan_resume.doc" download="resume"><button id="btn"
+            class="inline-flex text-black font-medium bg-[#18ffff] font-bold font-mono border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">Download cv</button></a>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+            
+  <hr class="bg-gray-500"> 
+
+  <!--BANNER ENDS-->
+
+  <!--FRONTEND SKILLS-->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center font-mono title-font text-[#18ffff] mb-4">Front-End Development Skills</h1>
+
+      </div>
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <img src="images/html.png" class="w-8 responsive">
+            <span class="title-font font-medium mx-2">Html5</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <img src="images/css3.png" class="w-8 responsive">
+            <span class="title-font font-medium mx-2">CSS3</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <img src="images/js.png" class="w-8 responsive">
+            <span class="title-font font-medium mx-2">JavaScript</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <img src="images/jquery-horizontal.svg" class="w-16 responsive">
+            <span class="title-font font-medium mx-2">Jquery</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <img src="images/bootstrap-5-1.svg" class="w-8 responsive">
+            <span class="title-font font-medium mx-2">Bootstrap4</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <img src="images/tailwind-css.png" class="w-8 responsive">
+            <span class="title-font font-medium mx-2">tailwind-css</span>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <hr class="bg-grey-700">
+
+  <!--MAIN SKILLS-->
+
+  <!--OTHER SKILLS-->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font font-mono text-[#18ffff] mb-4">Back-End Development Skills</h1>
+        <span class="title-font font-medium text-white ">PHP(Beginner)</span>
+        <div class="w-full bg-gray-200 h-1 mb-6 mt-2">
+          <div class="bg-green-500 h-1" style="width: 25%"></div>
+        </div>
+        <span class="title-font font-medium text-white ">SQL</span>
+        <div class="w-full bg-gray-200 h-1 mb-6">
+          <div class="bg-blue-400 h-1" style="width: 50%"></div>
+        </div>
+        <span class="title-font font-medium text-white">AJAX</span>
+        <div class="w-full bg-gray-200 h-1 mb-6">
+          <div class="bg-yellow-500 h-1" style="width: 75%"></div>
+        </div>
+        <span class="title-font font-medium  text-white">WooCommerce</span>
+        <div class="w-full bg-gray-200 h-1">
+          <div class="bg-red-600 h-1" style="width: 100%"></div>
+        </div><br>
+        <span class="title-font font-medium text-white ">Wordpress</span>
+        <div class="w-full bg-gray-200 h-1">
+          <div class="bg-indigo-600 h-1" style="width: 100%"></div>
+        </div><br>
+        <span class="title-font font-medium text-white">CodeIgnitor(Basic)</span>
+        <div class="w-full bg-gray-200 h-1">
+          <div class="bg-white-600 h-1" style="width: 70%"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ <hr class="bg-grey-700">
+  <!--OTHER SKILLS ENDS-->
+
+  <!--QUALIFICATION SECTION-->
+  <section id ="about-me" class="text-gray-600 body-font">
+  <h1 class="sm:text-3xl text-2xl font-medium text-center font-mono title-font text-[#18ffff] mb-4 mt-6">MY TIMELINE</h1>
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#18ffff] text-black relative z-10 title-font font-medium text-sm">
+          1</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+
+            <img src="images/school (1).png" alt="" class="w-24 h-24 rounded-full">
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2  class="font-medium title-font text-[#18ffff] mb-1 text-xl">12th CLASS -<i>2016</i></h2>
+            <p  class="leading-relaxed text-white">Had completed Higher Secondary from Jamia Millia Islamia with aggregate of 74%.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#18ffff] text-black relative z-10 title-font font-medium text-sm">
+          2</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+
+            <img src="images/school (2).png" alt="" class="w-24 h-24 rounded-full">
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-[#18ffff] mb-1 text-xl">B.TECH (COMPUTER SCIENCE & TECHNOLOGY)
+              -<i>2020</i></h2>
+            <p class="leading-relaxed text-white">Persuaded B.tech in computer science & technology from Dr. A.P.J Abdul Kalam
+              Technical University with aggregate of 78.9%.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#18ffff] text-black relative z-10 title-font font-medium text-sm">
+          3</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+
+            <img src="images/python.png" alt="" class="w-24 h-24 rounded-full">
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-[#18ffff] mb-1 text-xl">PYTHON STAR CERTIFICATION -<i>2020</i></h2>
+            <p class="leading-relaxed text-white">Have learnt Python programming language from Aptron Institute , Noida.</p>
+          </div>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="bg-grey-600">
+  <!--QUALIFICATION SECTION ENDS-->
+
+
+ <!--CERTIFICATION-->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col border border-t-[#18ffff] ">
+      <img class="lg:w-3/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded ring-offset-white" alt="hero"
+        src="images/certificate.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#18ffff]">Python Programming Certification Course</h1>
+        <p class="mb-8 leading-relaxed text-white">Have learnt basics of python programming from Aptron Institute, Noida sec 15 in 2020.</p>
+    
+      </div>
+    </div>
+  </section>
+
+  <hr class="bg-grey-700">
+
+
+<!--CERTIFICATION ENDS-->
+
+<!--PROJECTS-->
+  <section id="projects" class="text-gray-600 body-font bg-deep-purple">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#18ffff]">Glimpses Of My Work</h1>
+      
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="images/screenshot1.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-[#18ffff] mb-1">PROJECT 1</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3"> Microsoft-Clone</h1>
+              <p class="leading-relaxed">This Website is made with using mainly tailwind-css and Html5</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="images/screenshot2.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-[#18ffff] mb-1">PROJECT 2</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Facebook Login-Clone</h1>
+              <p class="leading-relaxed">This Website is made with using mainly tailwind-css and Html5.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="images/screenshot7.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-[#18ffff] mb-1">PROJECT 3</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Zomato website-Clone</h1>
+              <p class="leading-relaxed">A popular restraunt website clone Zomato is made with using Html5, CSS, Javascript .</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="images/screenshot8.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-[#18ffff] mb-1">PROJECT 4</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Simple Interior Design webpage</h1>
+              <p class="leading-relaxed">A simple Static website is made with Html5, CSS3 and Bootstrap .</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="images/screenshot5.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-[#18ffff] mb-1">PROJECT 5</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Solo Website</h1>
+              <p class="leading-relaxed">This website is made with using Html5, CSS3, JavaScript, Jquery and Bootstrp4.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="images/screenshot6.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-[#18ffff] mb-1">PROJECT 6</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Spotify-Clone</h1>
+              <p class="leading-relaxed">This webpage is a music player just like spotify app using html5, CSS3 & JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--PROJECTS ENDS-->
+
+<!--CONTACT ME-->
+<section  id="contact-me" class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#18ffff]">Contact Me</h1>
+    
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-white">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-white">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-white ">Message</label>
+            <textarea id="message" name="message" class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-black font-medium bg-[#18ffff] border-0 py-2 px-8 focus:outline-none hover:bg-[#ffcdd2] hover:text-gray-900 rounded text-lg">Send</button>
+        </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+          <a class="text-[#18ffff]">xyz@gmail.com</a>
+          <p class="leading-normal my-5 text-white">Okhla Bird Santuary.
+            <br class="text-white">New Delhi ,110025
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--CONTACT ME ENDS-->
+
+
+  <!--FOOTER SECTION-->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <span class="mx-2 text-2xl text-[#18ffff]"><img src="images/logo1.png" class="rounded rounded-full w-16" alt=""></span>
+        </a> 
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022
+       Portfolio —
+        <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer"
+          target="_blank">All Rights Reserved</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-[#18ffff]">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-[#18ffff]">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-[#18ffff]">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-[#18ffff]">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <button class="animate-bounce" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></button>
+  <!--FOOTER SECTION-->
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="script.js"></script>
+  </body>
+
+</html>
